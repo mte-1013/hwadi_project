@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'KerisKedyuche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-3@1.0/KERISKEDU_R.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KerisKedyuche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-3@1.0/KERISKEDU_B.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+body {
+    background-image: url("img/green.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 25px;
+    color: pink;
+}
+#title {
+    margin: 30px auto;
+    text-align: center;
+    font-family: KerisKedyuche;
+    animation: title_scene 3s forwards;
+}
+@keyframes title_scene {
+    0% {
+        font-size: 4px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#img-change {
+    display: none;
+}
+.jaesong {
+    position: absolute;
+    cursor: pointer;
+    bottom: 544px;
+    right: 60%;
+}
+.jaesong img {
+    position: absolute;
+
+}
+#stand {
+    top: 148px;
+}
+#jasook {
+    top: -40px;
+    opacity: 0;
+}
+#jasook.active {
+    animation: change-and-back 3s forwards;
+}
+#stand.active{
+    animation: remo 3s forwards;
+}
+@keyframes change-and-back {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes remo {
+    0% {
+        opacity: 1px;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.jaesong img {
+    width: 350px;
+}
+#arrow-right {
+    float: right;
+    width: 100px;
+    height: 500px;
+}
+#arrow-left {
+    float: left;
+    width: 100px;
+    height: 500px;
+}
+.arrow {
+    margin-top: 10px;
+    border-radius: 14px;
+    transition-duration: 0.5s;
+}
+.arrow:hover {
+    background-color: rgba(188, 188, 188, 0.3);
+}
+#gotohell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 74px;
+    border: 1px solid black;
+}
+#gotohell span {
+    position: absolute;
+    bottom: 7px;
+    left: -2px;
+}
+#gaytv {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 74px;
+    border: 1px solid black;
+}
+#ylogo {
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}

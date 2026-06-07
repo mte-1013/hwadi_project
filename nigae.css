@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'JoseonPalace';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+#youngdo {
+    width: 100%;
+    height: 805px;
+}
+#skiplock {
+    position: absolute;
+    left: 414px;
+    font-family: JoseonPalace;
+    color: #eed431;
+    font-size: 64px;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+}  
+body {
+    background-color: black;
+} 

@@ -1,0 +1,33 @@
+#clicker {
+    margin: 140px auto;
+    display: block;
+    cursor: pointer;
+    width: 400px;
+    height: 400px;
+}
+#count {
+    color: red;
+    font-size: 80px;
+    margin: auto;
+}
+body {
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}   
+.arrow {
+    border-radius: 14px;
+    transition-duration: 0.5s;
+}
+.arrow:hover {
+    background-color: rgba(188, 188, 188, 0.3);
+}
+#arrow-right {
+    position: absolute;
+    right: 8px;
+    top: 18%;
+    width: 100px;
+    height: 500px;
+}

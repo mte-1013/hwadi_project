@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헉</title>
+    <link rel="stylesheet" href="phone.css">
+    <link rel="icon" href="img/webicon.png" type="image/png">
+</head>
+<body>
+    <h1 id="huck">헉</h1>
+    <img src="img/desktop.png" id="desktop">
+    
+    <label for="img-change" class="pho">
+        <img src="img/phone.png" id="phone">
+        <img src="img/joygo.jpg" id="joygo">
+    </label>
+
+    <a href="tajiri.html"><img src="img/arrow-left.png" id="arrow-left" class="arrow"></a>
+
+    <script>
+        const phone = document.getElementById('joygo');
+
+        phone.addEventListener('click', () => {
+            phone.classList.toggle('active');
+        })
+        phone.addEventListener('animationend', () => {
+            phone.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

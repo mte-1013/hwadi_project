@@ -1,0 +1,10 @@
+body {
+    background-image: url(img/backroom.png);
+    background-size: cover;
+}
+#jungjang {
+    width: 100px;
+    position: absolute;
+    top: 34%;
+    left: 46%;
+}

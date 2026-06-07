@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>케인인님 한판해요</title>
+    <link rel="stylesheet" href="jakaneskin.css">
+    <link rel="icon" href="img/webicon.png" type="image/png">
+</head>
+<body>
+    <h1 id="title">주글만큼보고호~↗️↗️</h1>
+
+    <label for="img-change" class="jaesong">
+        <img id="stand" src="img/sijak.png">
+        <img id="jasook" src="img/jakane.png">
+    </label>
+
+    <a href="skinselecter.html"><div id="gotohell"><span>👃</span></div></a>
+    <a href="https://www.youtube.com/@kanetv8"><div id="gaytv"><img src="img/youtube.svg" id="ylogo"></div></a>
+
+    <a href="tajiri.html"><img src="img/arrow-right.png" id="arrow-right" class="arrow"></a>
+    <a href="cinema.html"><img src="img/arrow-left.png" id="arrow-left" class="arrow"></a>
+
+    <script>
+        const checkbox = document.getElementsByClassName('jaesong')[0];
+
+        checkbox.addEventListener('click', () => {
+            jasook.classList.toggle('active');
+            stand.classList.toggle('active');
+        })
+
+        checkbox.addEventListener('animationend', () => {
+            stand.classList.remove('active');
+            jasook.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

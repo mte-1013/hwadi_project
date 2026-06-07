@@ -1,0 +1,31 @@
+body {
+    background-image: url("img/cinema.jpg");
+    background-size: 1400px;
+    background-position: 50% -2%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+#hantang {
+    position: absolute;
+    top: 9.4%;
+    left: 31.4%;
+    width: 600px;
+}
+#arrow-right {
+    float: right;
+    width: 100px;
+    height: 500px;
+}
+#arrow-left {
+    float: left;
+    width: 100px;
+    height: 500px;
+}
+.arrow {
+    margin-top: 140px;
+    border-radius: 14px;
+    transition-duration: 0.5s;
+}
+.arrow:hover {
+    background-color: rgba(188, 188, 188, 0.3);
+}

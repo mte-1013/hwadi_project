@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뽈롱</title>
+    <link rel="stylesheet" href="nosegay.css">
+</head>
+<body>
+    <img src="img/webicon.png" id="clicker">
+    <span id="count">0</span>
+
+    <a href="prismshow.html"><img src="img/arrow-right.png" id="arrow-right" class="arrow"></a>
+
+    <script>
+        const clicker = document.getElementById('clicker');
+        const count_span = document.getElementById('count');
+
+        function add() {
+            let count = 0;
+
+            function increase() {
+                count++;
+                count_span.textContent = count;
+                clicker.src="img/clicker.png";
+                if (count == 318) {
+                    setTimeout(() => {
+                        alert("너이게이씨 뭐하냐구우우우우우우우우웃!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                    }, 100);
+                }
+                setTimeout(() => {
+                    clicker.src="img/webicon.png";
+                }, 300);
+            }
+            
+            return increase;
+        }
+
+        const s = add();
+
+        clicker.addEventListener('click', s);
+    </script>
+</body>
+</html>

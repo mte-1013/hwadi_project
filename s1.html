@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타지리리님 한판해요</title>
+    <link rel="icon" href="img/webicon.png" type="image/png">
+    <style>
+        @font-face {
+    font-family: 'SchoolSafetyRoundedSmile';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-R.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SchoolSafetyRoundedSmile';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OkDandan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/OkDanDan-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url("img/bedroom.jpg");
+    background-size: cover;
+}
+#tajiri {
+    position: absolute;
+    top: 34%;
+    left: 27%;
+    width: 50%;
+}
+#talkballoon {
+    display: inline-block;
+    width: 340px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    top: 34%;
+    left: 60%;
+    border: 2px solid black;
+}
+#talkballoon span {
+    font-size: 40px;
+    padding: 14px;
+    font-family: 'SchoolSafetyRoundedSmile';
+}
+#arrow-right {
+    float: right;
+    width: 100px;
+    height: 500px;
+}
+#arrow-left {
+    float: left;
+    width: 100px;
+    height: 500px;
+}
+.arrow {
+    border-radius: 14px;
+    transition-duration: 0.5s;
+    margin-top: 6px;
+}
+.arrow:hover {
+    background-color: rgba(188, 188, 188, 0.3);
+}
+.select {
+    display: inline-block;
+    width: 250px;
+    height: 120px;
+    background-color: white;
+    margin: 0px 40px;
+    border: 4px solid pink;
+    border-radius: 14px;
+    transition-duration: 0.4s;
+    font-size: 30px;
+    font-family: okdandan;
+    text-align: center;
+}
+.select:hover {
+    background-color : rgb(226, 226, 226);
+}
+#s {
+    display: flex;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div id="s">
+        <a href="s1.html"><div class="select" id="s1">타지리리님 한판해요</div></a>
+        <a href="s2.html"><div class="select" id="s2">케인님은 어딨나요??</div></a>
+        <a href="s3.html"><div class="select" id="s3">케인님과는 어떤 특수한 관계이신가요?</div></a>
+    </div>
+    <img src="img/tajiri.png" id="tajiri">
+    <div id="talkballoon">
+        <span>나가</span>
+    </div>
+    
+    <a href="phone.html"><img src="img/arrow-right.png" id="arrow-right" class="arrow"></a>
+    <a href="home.html"><img src="img/arrow-left.png" id="arrow-left" class="arrow"></a>
+</body>
+</html>

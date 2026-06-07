@@ -1,0 +1,56 @@
+body {
+    background-image: url("img/booth.png");
+    background-size: cover;
+}
+input {
+    display: none;
+}
+#hlabel {
+    position: absolute;
+    bottom: 0px;
+    left: 240px;
+}
+#hantangee{
+    width: 240px;
+}
+#qr {
+    position: absolute;
+    left: 44px;
+    bottom: 240px;
+    width: 140px;
+    opacity: 0;
+}
+#hantangee:hover ~ #qr {
+    animation: ggat 2s forwards;
+}
+@keyframes ggat{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#arrow-right {
+    float: right;
+    width: 100px;
+    height: 500px;
+}
+#arrow-left {
+    float: left;
+    width: 100px;
+    height: 500px;
+}
+.arrow {
+    margin-top: 140px;
+    border-radius: 14px;
+    transition-duration: 0.5s;
+}
+.arrow:hover {
+    background-color: rgba(188, 188, 188, 0.3);
+}
+#jiha {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+}
